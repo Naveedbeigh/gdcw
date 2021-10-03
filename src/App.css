@@ -1,38 +1,181 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+*{
+  padding: 0;
+  margin: 0;
+ 
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  color: #615929;
+  
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+p{
+  margin: 1rem;
+  text-indent: 1rem;
+  
 }
+/*=========================  Header section ====================================
+================================================================================*/
+.topSection h1, h4{
+  font-family: 'Times New Roman', Times, serif;
+}
+.topSection{
+  background-image: linear-gradient( 135deg,  #ded7b6 10%, #c2b88c 100%);
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+padding: 6rem 0 1rem 0;
+
+}
+.topSection img{
+  border-radius: 60%;
+  
+}
+/*=========================  navbar section ====================================
+================================================================================*/
+.flex{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background-image: linear-gradient( 135deg, #faf8ed 10%, #dedbcc 100%);
+}
+.navbar{
+  display: flex;
+  list-style-type: none;
+  background: #c28c3a;
+  padding: 1.5rem;
+  z-index: 100;
+  
+
+  
+  
+}
+.navbar li a{
+  text-decoration: none;
+
+  text-transform: uppercase;
+  font-weight: bolder;
+  font-family: x;
+  padding: 1rem;
+
+}
+.navbar li a:hover{
+ background:#ccc9b5 ;
 }
 
-.App-link {
-  color: #61dafb;
+
+
+.dropdown {
+  position: relative;
+  display: inline-block;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.dropdown-content {
+  display: none;
+  margin-top: 15px;
+  position: absolute;
+  background-color: #deaf68;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown:hover .dropdown-content {display: block;}
+@media (max-width:700px) {
+  .navbar{
+    flex-direction: column;
+    padding: 0;
+    width: 50%;
   }
-  to {
-    transform: rotate(360deg);
+  .navbar li a {
+  
+  font-size: small;
+  margin: 2px;
+
+ 
+ 
+  }
+  .dropdown-content{
+    margin-top: 0px;
+  }
+
+}
+.main{
+  flex: 1;
+}
+.sidebar{
+  flex: .5;
+}
+/*=========================  Body section ====================================
+================================================================================*/
+.body{
+  margin: 1rem 1rem 0 1rem;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(5px);
+
+  border-radius: 10px;
+}
+.body h3{
+margin: 1rem;
+font-family: x;
+}
+/*=========================  Announcements section =============================
+================================================================================*/
+.Announcement{
+ margin: 1rem 1rem 0 1rem;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(5px);
+  z-index: 12;
+  border-radius: 10px;
+ 
+
+}
+.Announcement h3{
+  text-align: center;
+  margin: 1rem;
+font-family: x;
+}
+/*=========================  policy section ====================================
+================================================================================*/
+.ethicalpolicy{
+  margin-top: 9rem;
+}
+/*=========================  Footer  ===========================================
+================================================================================*/
+.flexfoot {
+  display: flex;
+  justify-content: space-around;
+  background-image: linear-gradient( 135deg,  #bdb179 10%, #c2b88c 100%);
+  font-family: x;
+  font-weight: bolder;
+  z-index: 10;
+ box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding: 6rem;
+
+}
+
+/*=========================  Media Queries =====================================
+================================================================================*/
+@media (max-width:700px){
+
+  .flex{
+    flex-direction: column;
+  }
+  .flexfoot{
+    flex-direction: column;
+    padding: 1rem;
+  text-align: center;
+  }
+  .flexfoot li{
+    margin: 1rem;
+
   }
 }
