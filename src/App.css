@@ -87,14 +87,12 @@ padding: 6rem 0 1rem 0;
   .navbar{
     flex-direction: column;
     padding: 0;
-    width: 50%;
+ line-height: 1.4rem;
+ 
   }
   .navbar li a {
   
   font-size: small;
-  margin: 2px;
-
- 
  
   }
   .dropdown-content{

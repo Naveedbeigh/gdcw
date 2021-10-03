@@ -4,10 +4,10 @@ import EmailIcon from '@mui/icons-material/Email';
 export default function Header() {
     return (
         <>
-             <div className="contact" style={{ float: 'right' }}> <PhoneIcon fontSize='small' sx={{ mr: 1 }} /> +91 1234567890      <EmailIcon fontSize='small' sx={{ ml: 1, mr: 1 }} /> <a href="mailto: example@gmail.com"> example@gmail.com</a> </div>
-               
+            <div className="contact" style={{ float: 'right' }}> <PhoneIcon fontSize='small' sx={{ mr: 1 }} /> +91 1234567890      <EmailIcon fontSize='small' sx={{ ml: 1, mr: 1 }} /> <a href="mailto: example@gmail.com"> example@gmail.com</a> </div>
+
             <div className="topSection">
-            
+
                 <div className="topheading">
                     <img src='../im9.jpg' className="App-logo" alt="logo" style={{ width: '9rem' }} />
                     <h1 >Journal name here</h1>
